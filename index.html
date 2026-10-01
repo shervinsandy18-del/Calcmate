@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CalcMate - B.C.Shervin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <section class="calculator">
+      <div class="topbar">
+        <div>
+          <p class="brand">CalcMate</p>
+          <span class="creator">B.C.Shervin</span>
+        </div>
+        <button id="themeBtn" class="icon-btn" aria-label="Toggle theme">☾</button>
+      </div>
+
+      <div class="display">
+        <div id="historyDisplay" class="history"></div>
+        <div id="display" class="current">0</div>
+      </div>
+
+      <div class="keypad">
+        <button class="key utility" data-action="clear">AC</button>
+        <button class="key utility" data-action="delete">DEL</button>
+        <button class="key utility" data-action="percent">%</button>
+        <button class="key operator" data-value="/">÷</button>
+
+        <button class="key" data-value="7">7</button>
+        <button class="key" data-value="8">8</button>
+        <button class="key" data-value="9">9</button>
+        <button class="key operator" data-value="*">×</button>
+
+        <button class="key" data-value="4">4</button>
+        <button class="key" data-value="5">5</button>
+        <button class="key" data-value="6">6</button>
+        <button class="key operator" data-value="-">−</button>
+
+        <button class="key" data-value="1">1</button>
+        <button class="key" data-value="2">2</button>
+        <button class="key" data-value="3">3</button>
+        <button class="key operator" data-value="+">+</button>
+
+        <button class="key" data-action="sign">±</button>
+        <button class="key" data-value="0">0</button>
+        <button class="key" data-action="decimal">.</button>
+        <button class="key equals" data-action="equals">=</button>
+      </div>
+
+      <div class="history-panel">
+        <div class="history-heading">
+          <span>Recent calculations</span>
+          <button id="clearHistory">Clear</button>
+        </div>
+        <div id="historyList" class="history-list">
+          <p class="empty">No calculations yet.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
